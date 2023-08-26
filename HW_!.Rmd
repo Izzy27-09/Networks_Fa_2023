@@ -109,3 +109,13 @@ Revisit the bridges and local bridges you listed in (a): are they still bridges 
 There would still be a bridge present in the graph
 
 ![](graph2.jpg)
+
+**4**
+**a.)**Construct a network of the five cities. Here’s how we’ll decide to connect them: (i)
+If you can drive between two cities in 150 miles or less, add a strong tie between them. (ii)
+If you can’t drive between two cities within 150 miles, but can do so in 200 miles or less,
+add a weak tie between them. You can travel on either a direct route (a single road between
+cities) or an indirect route (a combination of roads going through other cities). Once you’ve
+created the network, write a list of all the strong ties and another list of all the weak ties.
+
+![](graph3.jpg)
