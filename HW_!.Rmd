@@ -49,7 +49,7 @@ this bank was removed from the graph?
 
 * C would have 1 component
 
-* D would have 1 component
+* D would have 4 components
 
 * E would have 1 component
 
@@ -61,7 +61,7 @@ this bank was removed from the graph?
 
 * I would have 1 component
 
-* J would have 1 component
+* J would have 6 components
 
 **c.)** Is there a bank (or banks) in Figure 1 with the property that the maximum distance
 from this bank to any other bank at most 2? If there is, name all such banks and say why
@@ -119,3 +119,10 @@ cities) or an indirect route (a combination of roads going through other cities)
 created the network, write a list of all the strong ties and another list of all the weak ties.
 
 ![](graph3.jpg)
+The cities that satisfy the Strong Triadic Closure Property are cities C,A,B as between these cities they have a strong tie from one node. So it would make sense that if two nodes both have a strong tie to one other node that those same nodes would also have a strong tie between themselves. As for the cities that violate the Strong Triadic Closure Property would be A,B,D as both A and D have a strong tie to B so A and D should also have a strong tie between each other but they instead have a weak tie.
+
+**c.)** Can you change the ‘200 miles’ threshold in our definition of weak ties, so that the
+Strong Triadic Closure Property will always be satisfied of all cities? Explain why
+
+Yes this should be able to make it so that the Strong Triadic Closure Property will always be satisfied of all cities, as this would make it so that strong ties are formed between a set of 3 nodes where if the two nodes have a strong leading to the other singular node then a strong tie is also formed between them
+
