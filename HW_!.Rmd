@@ -2,7 +2,9 @@
 title: "Networks HW1"
 author: "izd3"
 date: "2023-08-26"
-output: pdf_document
+output:
+  word_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
@@ -124,5 +126,38 @@ The cities that satisfy the Strong Triadic Closure Property are cities C,A,B as 
 **c.)** Can you change the ‘200 miles’ threshold in our definition of weak ties, so that the
 Strong Triadic Closure Property will always be satisfied of all cities? Explain why
 
-Yes this should be able to make it so that the Strong Triadic Closure Property will always be satisfied of all cities, as this would make it so that strong ties are formed between a set of 3 nodes where if the two nodes have a strong leading to the other singular node then a strong tie is also formed between them
+Yes this should be able to make it so that the Strong Triadic Closure Property will always be satisfied of all cities, as this would make it so that strong ties are formed between a set of 3 nodes where if the two nodes have a strong leading to the other singular node then a strong tie is also formed between them.
+
+**5.)**
+**a.)**
+
+What are the possible structures of a balanced complete graph with 4 nodes? For each
+possible scenario, draw an example and calculate the number of negative edges in it.
+
+
+![](graph4.jpg)
+
+![](graph5.jpg)
+
+**b.)**
+
+What are the possible structures of a balanced complete graph with 5 nodes? For
+each possible scenario, draw an example and calculate the number of negative edges in it.
+
+![](graph6.jpg)
+
+![](graph7.jpg)
+
+![](graph8.jpg)
+
+
+**c.)**
+
+These exercises show how balanced theorem simplifies the counting of different balanced structures. Indeed, if one takes a naive approach by simply enumerating all possible
+signed complete graphs of 5 nodes (10 edges) and checking which of them are balanced, they
+will need to examine 210 = 1, 024 different configurations!
+Now let’s try to generalize the results in (a) and (b): For an integer n ≥ 3, what are the
+possible number of negative edges of a balanced complete graph with n nodes?
+
+$$\frac{n(n-1)}{n}$$
 
