@@ -1,0 +1,44 @@
+---
+title: "Pset3"
+author: "izd3"
+format: pdf
+editor: visual
+---
+
+1.)I truly believe using the bidding agent would be a horrible idea. For one while it might seem nice that you can easily just input what your maximum bid at the time is and just return to see if you won or not.
+
+inputting the bid is not the problem however, it's the fact that you cannot stop or change your bid after the auction has begun. It ignores the entire aspect of human strategy from itself. That's also why I believe the example of the formula b=100(N-1)/N is horrible. Having a fixed formula for an auction is bad, because as I said humans have different strategies, and confining bidding to something that simplistic is wrong. What if during an auction you realize that the highest bid is coming too close to your maximum bid, to the point where you believe it won't be worth continuing all because there were many bidders present, well you can't stop it now because of the bidding agent, or the inverse where since there is very few amount of bidders present you maximum bid value is set far away from your maximum value. This formula is too dependent on the number of bidders present,and also because of the nature of humans I feel like there is no correct number in order to make this agent work, all because the human side is not factored in at all.
+
+2.)
+
+a\)
+
+i\) (100, 100), (100, 80), (80, 100), (80, 80) are all the pairs of the individuals buying at a probability of 1/4 each, since we want the instances for when the item is bought at \$100, we look at each pair that makes this possible which are (100,100),(100,80),(80,100)
+
+$$
+Probabilty(post price 100)=\frac{1}{4}+\frac{1}{4}+\frac{1}{4}=\frac{3}{4}
+$$
+
+ii\)
+
+$$
+Expected\,Revenue= (\frac{3}{4} * $100) +( \frac{1}{4} * $50) = $75 + $12.5 = $87.5
+$$
+
+b)
+
+i\) Since this is a second price auction it would be best if each person bids their true value, so the pairs would be:
+
+-   (100, 100): Both will bid \$100.
+
+-   (100, 80): The first person will bid \$100, and the second person will bid \$80.
+
+-   (80, 100): The first person will bid \$80, and the second person will bid \$100.
+
+-   (80, 80): Both will bid \$80.
+
+ii\)
+
+$$
+Expected\,Revenue = \frac{1}{4} * $100 + \frac{1}{4} * $80 + \frac{1}{4} * $80 + \frac{1}{4} * $80 = $25 + $20 + $20 + $20 = $85
+$$
