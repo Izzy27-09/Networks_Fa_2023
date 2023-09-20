@@ -25,7 +25,7 @@ $$
 Expected\,Revenue= (\frac{3}{4} * $100) +( \frac{1}{4} * $50) = $75 + $12.5 = $87.5
 $$
 
-b)
+b)  
 
 i\) Since this is a second price auction it would be best if each person bids their true value, so the pairs would be:
 
@@ -42,3 +42,17 @@ ii\)
 $$
 Expected\,Revenue = \frac{1}{4} * $100 + \frac{1}{4} * $80 + \frac{1}{4} * $80 + \frac{1}{4} * $80 = $25 + $20 + $20 + $20 = $85
 $$
+
+3.)
+
+a.) ![figure one](fig1.jpg)
+
+From this graph, we can clearly see that a perfect matching can occur with this information. Simply put as Adam can only attend in-person sections then his only options are the ones on Tuesday and Monday. By assigning him the one on Tuesday it gives Brian, a TA who could only do sections on Mondays a chance to take that Monday in person section. His other option was a Monday Zoom session but that was given to Karen who can only do Zoom sections, with her other option being a Wednesday Zoom section which was finally given to Jemma in the end as she can only attend sessions on Wednesdays.
+
+b.)![figure one](fig2.jpg)
+
+When looking at the nodes we have node B, with edges to nodes F and C, node G with edges to nodes F,C, and H, and finally node D with edges to nodes C, H, E, and A. From this we can see that perfect matching does not occur as not every square have a viable combination, node G is the only one connected to nodes E and A, making it impossible to form a perfect match.
+
+c.) ![figure one](fig3.jpg)
+
+From the graph, we have node H which has an edge to node F, node B which has an edge to node F, node G which has an edge at nodes F, and C. Finally node D which has an edge to nodes C, A, E. Now it is impossible to form a perfect matching as both nodes B and H go to node F only coupled with the fact that node G also goes to node F, with its only other option being node C, which makes it so that there are three nodes essentially going after a node. Finally, node D also connects to node C but is also exclusively connected to nodes A and E, which also makes it so that one of those nodes will always be left out.
