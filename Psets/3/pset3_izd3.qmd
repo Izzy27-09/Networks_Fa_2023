@@ -22,7 +22,7 @@ $$
 ii\)
 
 $$
-Expected\,Revenue= (\frac{3}{4} * $100) +( \frac{1}{4} * $50) = $75 + $12.5 = $87.5
+ExpectedRevenue= (\frac{3}{4} * 100) +( \frac{1}{4} * 50) = 75 + 12.5 = 87.5
 $$
 
 b)  
@@ -40,7 +40,7 @@ i\) Since this is a second price auction it would be best if each person bids th
 ii\)
 
 $$
-Expected\,Revenue = \frac{1}{4} * $100 + \frac{1}{4} * $80 + \frac{1}{4} * $80 + \frac{1}{4} * $80 = $25 + $20 + $20 + $20 = $85
+ExpectedRevenue = \frac{1}{4} * 100 + \frac{1}{4} * 80 + \frac{1}{4} * 80 + \frac{1}{4} * 80 = 25 + 20 + 20 + 20 = 85
 $$
 
 3.)
@@ -56,3 +56,19 @@ When looking at the nodes we have node B, with edges to nodes F and C, node G wi
 c.) ![figure one](fig3.jpg)
 
 From the graph, we have node H which has an edge to node F, node B which has an edge to node F, node G which has an edge at nodes F, and C. Finally node D which has an edge to nodes C, A, E. Now it is impossible to form a perfect matching as both nodes B and H go to node F only coupled with the fact that node G also goes to node F, with its only other option being node C, which makes it so that there are three nodes essentially going after a node. Finally, node D also connects to node C but is also exclusively connected to nodes A and E, which also makes it so that one of those nodes will always be left out.
+
+4\)
+
+a.) ![figure one](fig4.jpg) ![figure one](fig5.jpg) ![figure one](fig6.jpg)
+
+b.) ![figure one](fig7.jpg) ![figure one](fig8.jpg) ![figure one](fig9.jpg) ![figure one](fig10.jpg) ![figure one](fig11.jpg)
+
+The range of t has to be \[0,4\] in order for us to keep a market clearing with (2,2,6)
+
+5.)
+
+a.) ![figure one](fig12.jpg)
+
+b.)
+
+The upper parallel line represents when both b values for the buyers are lower than the a values for both buyers. At this point (ex (0,2)), one buyer has an equal preference for both items but if we increase the price of b anymore (ex (0,3)), neither buyer will want item b. The lower parallel line represents when both b values for the buyers are higher than the a values for both buyers. At this point (ex (2,2)) one buyer has an equal preference for both items but if we decrease the price of b (ex (2,1)), both buyers will prefer item B and there will not be a match.
