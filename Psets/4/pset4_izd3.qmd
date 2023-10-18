@@ -1,0 +1,332 @@
+---
+title: "PSET 4"
+author: "izd3"
+format: pdf
+editor: visual
+---
+
+**1.**
+
+**a.)**
+
+i.)**EQ 1**
+
+Price: Traders T1 and T2 each set a price of 1
+
+Flow of Goods:
+
+-   S1 sells to T1
+
+-   S2 sells to T2
+
+-   B1 buys from T1
+
+-   B2 buys from T2
+
+Profit:
+
+-   T1 and T2 each make a profit of 1 from selling to the buyers.
+
+-   S1 and S2 make no profit (their value is 0).
+
+ii)**EQ 2**
+
+Price: Traders T1 and T2 each set a price of 0
+
+Flow of Goods:
+
+-   S1 sells to T1
+
+-   S2 sells to T2
+
+-   B1 buys from T1
+
+-   B2 buys from T2
+
+Profit:
+
+-   T1 and T2 make no profit from selling to the buyers
+
+-   S1 and S2 make no profit (their value is 0).
+
+In both cases, the prices and goods flow such that no one has an incentive to deviate, making them Nash equilibria.
+
+**b.)**
+
+**EQ 1:**
+
+Price: Traders T1 and T2 each set a price of 1.
+
+Flow of goods:
+
+-   S1 sells to T1.
+
+-   S2 sells to T2.
+
+-   B1 buys from T1.
+
+-   B2 buys from T2.
+
+-   B3 buys from either T1 or T2.
+
+Profit:
+
+-   T1 and T2 each make a profit of 1 from selling to B1 and B2.
+
+-   S1 and S2 make no profit (their value is 0).
+
+**EQ 2:**
+
+Price: Traders T1 and T2 each set a price of 0.
+
+Flow of goods:
+
+-   S1 sells to T1.
+
+-   S2 sells to T2.
+
+-   B1 buys from T1.
+
+-   B2 buys from T2.
+
+-   B3 buys from either T1 or T2.
+
+Profit:
+
+-   T1 and T2 make no profit from selling to the buyers.
+
+-   S1 and S2 make no profit (their value is 0).
+
+**EQ 3:**
+
+Price: Trader T1 sets a price of 0.5, and Trader T2 sets a price of 1.
+
+Flow of goods:
+
+-   S1 sells to T1.
+
+-   S2 sells to T2.
+
+-   B1 buys from T1.
+
+-   B2 buys from T2.
+
+-   B3 buys from T2.
+
+Profit:
+
+-   T1 makes a profit of 0.5 from selling to B1.
+
+-   T2 makes a profit of 1 from selling to B2 and B3.
+
+-   S1 and S2 make no profit (their value is 0).
+
+In Equilibrium 1, the prices and goods flow such that no one has an incentive to deviate. In Equilibrium 2, traders set a price of 0, and buyers prefer to buy from traders offering the good at a lower price. In Equilibrium 3, the traders set prices to maximize their profit.
+
+\newpage
+
+**2.**
+
+**a.)**
+
+There are 2 strongly connected components in Figure 2,
+
+Component 1 is made up of nodes A,E,F and would be considered the IN, the second component is comprised of nodes B,C,G,H and would be considered the SCC, the next nodes A,E,F would be considered the IN, now then nodes D and I don't create a strongly connected component, but this it still forms a component that would be considered the OUT.
+
+**b.)** I would add a link from node D to H as that would make it so that H and properly navigate through
+
+**c.)**
+
+\newpage
+
+**3.)**
+
+**a.)**
+
+Node I would be the perfect starting seed. The reason I say this is because I is the only that has nothing going into it, instead it does to other values. In the first two iterations it will be slow as it would only go through node H on the first iteration and then node G on the second iteration, but once it hits node C multiple pages would be added to the database thanks to the directions leaving C. From C it would get B and E at the same time making it so more ground is covered and more nodes are gone through than any other seed. There is also the fact that using node I as the seed would be the only way to get all the nodes present into a database.
+
+**b.)**
+
+**First Round:**
+
+1.  **Seed A-1/9:** E-1/18,D-1/18, G,H,I-0%(not connect to main area),B,C,F-0%(impossible to do in 1st round)
+2.  **Seed D-1/9:** E-1/9, all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+3.  **Seed E-1/9:** F-1/9, all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+4.  **Seed F-1/9:** C-1/9, all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+5.  **Seed C-1/9:** E-1/18, B-1/18 all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+6.  **Seed B-1/9:** E-1/18, A-1/18 all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+7.  **Seed I-1/9:** H-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round 1
+8.  **Seed H-1/9:** G-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round 1, except for I, it has a prob of 0 because there is no way of reaching it
+9.  **Seed G-1/9:** C-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round 1, except for I and H, it has a prob of 0 because there is no way of reaching it
+
+**Second Round:**
+
+1.  **Seed A-1/9:** E-1/6,D-1/18,F-1/9 G,H,I-0(not connected to main area), B,C-0(impossible to do in 2nd round)
+
+2.  **Seed D-1/9:** E-1/9, F-1/9, all other nodes have a prob of 0 either because it is impossible to get there in round TWO or they are not connected to the main structure
+
+3.  **Seed E-1/9:** F-1/9, C-1/9, all other nodes have a prob of 0 either because it is impossible to get there in round two or they are not connected to the main structure
+
+4.  **Seed F-1/9:** C-1/9, B-1/18, E-1/18 all other nodes have a prob of 0 either because it is impossible to get there in round TWO or they are not connected to the main structure
+
+5.  **Seed C-1/9:** E-1/9, B-1/18, F-1/9, A-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round two or they are not connected to the main structure
+
+6.  **Seed B-1/9:** E-1/19, A-1/18,D-18,F-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round one or they are not connected to the main structure
+
+7.  **Seed I-1/9:** H-1/9, G-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round 1
+
+8.  **Seed H-1/9:** G-1/9, C-1/9 all other nodes have a prob of 0 either because it is impossible to get there in round 1, except for I, which has a prob of 0 because there is no way of reaching it
+
+9.  **Seed G-1/9:** C-1/9,B-1/18, E-1/18 all other nodes have a prob of 0 either because it is impossible to get there in round 1, except for I and H, which has a prob of 0 because there is no way of reaching it
+
+**c.)**
+
+The approximate probability that G would be visited in a round N would be 1/9, as there is already a 1/9 chance for G to be selected as the seed, but only one node goes into G being H which also has a 1/9 chance of being the seed and finally, I is the only node that goes into H with a 1/9 chance. So by using these facts, G should have a 1/9 chance of being picked in N large number round.
+
+**d.)**
+
+1/9
+
+\newpage
+
+**4.)**
+
+**a.)**
+
+**Initial Scores (Before Normalization):**
+
+Authority Scores (Round 1):
+
+-   A: 0 (no incoming links to A)
+
+-   B: 0 (no incoming links to B)
+
+-   C: 0 (no incoming links to C)
+
+-   D: 0 (no incoming links to D)
+
+-   E: 3 (incoming links from A, B, C)
+
+-   F: 3 (incoming links from A, C, and D)
+
+-   G: 2 (incoming link from C and D)
+
+Hub Scores (Round 1):
+
+-   A: 2 (pointing to E and F)
+
+-   B: 1 (pointing to E)
+
+-   C: 3 (pointing to E,F, and G)
+
+-   D: 2 (pointing to F and G)
+
+-   E: 0 (no outgoing links)
+
+-   F: 0 (no outgoing links)
+
+-   G: 0 (no outgoing links)
+
+Authority Scores (Round 2):
+
+-   A: 0 (no incoming links to A)
+
+-   B: 0 (no incoming links to B)
+
+-   C: 0 (no incoming links to C)
+
+-   D: 0 (no incoming links to D)
+
+-   E: 6 (incoming links from A, B, C)
+
+-   F: 7 (incoming links from A, C, and D)
+
+-   G: 5 (incoming link from C and D)
+
+Hub Scores (Round 2):
+
+-   A: 6 (pointing to E and F)
+
+-   B: 3 (pointing to E)
+
+-   C: 8 (pointing to E,F,G)
+
+-   D: 5 (pointing to F and G)
+
+-   E: 0 (no outgoing links)
+
+-   F: 0 (no outgoing links)
+
+-   G: 0 (no outgoing links)
+
+    ```{r}
+    auto_c<-6+7+5
+    ```
+
+**Normalized Scores (After Normalization):**
+
+Authority Scores (Round 2, Normalized):
+
+-   A: `r 0/auto_c`
+
+-   B: `r 0/auto_c`
+
+-   C: `r 0/auto_c`
+
+-   D: `r 0/auto_c`
+
+-   E: `r 6/auto_c`
+
+-   F: `r 7/auto_c`
+
+-   G: `r 0/auto_c`
+
+```{r}
+auto_hub<-6+3+8
+```
+
+Hub Scores (Round 2, Normalized):
+
+-   A: `r 6/auto_hub`
+
+-   B: `r 3/auto_hub`
+
+-   C: `r 8/auto_hub`
+
+-   D: `r 5/auto_hub`
+
+-   E: `r 0/auto_hub`
+
+-   F: `r 0/auto_hub`
+
+-   G: `r 0/auto_hub`
+
+**b.)**
+
+**Option 1 (Normalized Authority Scores):**
+
+```{r}
+auto_c<-6+7+5+1
+```
+
+-   A: `r 0/auto_c`
+
+-   B: `r 0/auto_c`
+
+-   X: `r 1/auto_c`
+
+-   Y: `r 0/auto_c`
+
+**Option 2 (Normalized Authority Scores):**
+
+```{r}
+auto_c<-3+3+6+7+5+3
+```
+
+-   A: `r 3/auto_c`
+
+-   B: `r 3/auto_c`
+
+-   X: `r 3/auto_c`
+
+-   Y: `r 0/auto_c`
