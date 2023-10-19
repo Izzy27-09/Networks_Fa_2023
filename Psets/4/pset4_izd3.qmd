@@ -133,9 +133,13 @@ There are 2 strongly connected components in Figure 2,
 
 Component 1 is made up of nodes A,E,F and would be considered the IN, the second component is comprised of nodes B,C,G,H and would be considered the SCC, the next nodes A,E,F would be considered the IN, now then nodes D and I don't create a strongly connected component, but this it still forms a component that would be considered the OUT.
 
-**b.)** I would add a link from node D to H as that would make it so that H and properly navigate through
+**b.)** I would add a link from node G to F as nodes A, E, and F can all reach each other, there is no way for our first SCC to get over to the nodes A, E, F but by adding that link between G and F it makes it possible so that all the paths on that side are possible to be reached.
+
+![image of graph 1](fig1.jpg)
 
 **c.)**
+
+I would delete the link between nodes B and H, as that would make it possible for a lot of paths to block the top nodes from being a starting point at all, making it so that nodes H or G have to be used in order to access other top nodes. ![graph of fig2](fig2.jpg)
 
 \newpage
 
@@ -279,7 +283,7 @@ Authority Scores (Round 2, Normalized):
 
 -   F: `r 7/auto_c`
 
--   G: `r 0/auto_c`
+-   G: `r 5/auto_c`
 
 ```{r}
 auto_hub<-6+3+8
