@@ -1,7 +1,7 @@
 ---
-title: "PSET 4"
+title: "Pset_4_izd3"
 author: "izd3"
-format: pdf
+format: docx
 editor: visual
 ---
 
