@@ -1,0 +1,192 @@
+---
+title: "PSET6"
+author: "IZD3"
+format: pdf
+editor: visual
+---
+
+**1.)**
+
+**a)** In the case of (R, R, B, B) where Player 1 and 2 drew red marbles and Player 3 and 4 drew blue marbles, with the restriction that each player can only observe the choice made by the previous person (Player n can only observe Player n-1), the guesses made by Players 1-4 would be as follows:
+
+1.  Player 1: Player 1 makes an initial guess without any information from others. Since Player 1 drew a red marble, they will guess "MR" based on the majority of the marble color they observed.
+
+2.  Player 2: Player 2 can only observe Player 1's guess, which in this case is "MR." Player 2 also drew a red marble. With the information that Player 1 guessed "MR," Player 2 will guess the same, "MR."
+
+3.  Player 3: Player 3 can only observe Player 2's guess, which is "MR." Player 3 drew a blue marble, but because the previous two players guessed "MR," and Player 3 can't see the actual marbles drawn, they will also guess "MR."
+
+4.  Player 4: Player 4 can only observe Player 3's guess, which is "MR." Player 4 drew a blue marble, but based on the guesses of the previous players (all guessing "MR"), Player 4 will also guess "MR."
+
+The cascade of guesses in this case results in all players guessing "MR" even though the actual observed marble colors were split evenly.
+
+**b.)** The strategy for players in this setup is to simply mimic the guess made by the previous player. This is because they can only see the guess of the previous player and have no information about the actual marbles drawn. As a result, they follow the cascade of guesses made by the previous players, and this cascade continues until the last player.
+
+The players make their guesses based solely on the guesses of those who went before them, creating an information cascade where each player follows the decisions of the previous player.
+
+**c.)** In this case, where each person can only observe the choices made by the previous two people (Player n can observe choices made by Players n-2 and n-1), the guesses made by Players 1-4 in the case of (R, R, B, B) would be as follows:
+
+1.  Player 1: Player 1 makes an initial guess without observing anyone else's choice, so they guess "MR" based on the majority of the marble color they observed.
+
+2.  Player 2: Player 2 can only observe Player 1's guess, which is "MR." Player 2 also observed Player 1 draw a red marble, so they guess "MR."
+
+3.  Player 3: Player 3 can observe the guesses of both Player 1 ("MR") and Player 2 ("MR"). Player 3 drew a blue marble, and they see that Player 2 guessed "MR" despite observing Player 1's choice. Therefore, Player 3 will guess "MR" as well.
+
+4.  Player 4: Player 4 can observe the guesses of Players 2 and 3, both of which are "MR." Player 4 drew a blue marble, and since both of the previous players guessed "MR," Player 4 will also guess "MR."
+
+In this setup, the guesses again follow the cascade of guesses made by the previous players, leading to all players guessing "MR" even though the actual observed marble colors were evenly split.2
+
+**2.)**
+
+**a.)**
+
+Player 1's guess depends on the value of p. If p = 1, Player 1 will always guess Urn A, and if p = 0, Player 1 will always guess Urn B. In between these extreme values of p, Player 1 will guess Urn A when the conditional probability of Urn A is higher than Urn B, given what they know.
+
+The conditional probability of Urn A, given that they observe a red marble, is P(Urn A \| Red)
+
+a\>b. This means Player 1 will guess Urn A when the prior probability p is within the range *a*\>*p*\>*b*.
+
+$$
+(1-p)\frac{a}{(1-p)a+(1-b)(1-p)}
+$$ The conditional probability of Urn B, given that they observe a red marble, is P(Urn B \| Red)
+
+$$
+(1-b)\frac{1-p}{(1-p)a+(1-b)(1-p)}
+$$ Player 1 will guess Urn A when P(Urn A \| Red) is greater than or equal to P(Urn B \| Red). So:
+
+$$
+(1-p)\frac{a}{(1-p)a+(1-b)(1-p)}>=(1-b)\frac{1-p}{(1-p)a+(1-b)(1-p)}
+$$ Simplifying gives us
+
+$$
+(1-p)a>=(1-b)(1-p)
+$$ $$
+a>=1-b
+$$ So, Player 1 will guess Urn A regardless of the color of the marble they draw when p is in the range 0 \<= p \<= 1 - b.
+
+**b.)**
+
+If Player 1 has guessed Urn A and drew a red marble, Player 2, hearing Player 1's guess, should guess based on maximizing their chances of being correct. If Player 2 draws a red marble, they should guess Urn A since Player 1 guessed Urn A and the evidence supports it.
+
+If Player 2 draws a blue marble, they should also guess Urn A. This is because they know Player 1 guessed Urn A, and even though they drew a blue marble, the evidence from Player 1's guess still suggests Urn A. Player 2 should follow Player 1's guess because they have no additional information to suggest Urn B.
+
+**c.)** p = 0.5, a = 0.25, and b = 0.5.
+
+$$
+P(UrnA|BLUE)=(1-0.5)*\frac{0.25}{(1-0.5)0.25+(1-0.5)(1-0.5)}=0.333
+$$
+
+$$
+P(UrnB|BLUE)=(1-0.5)*\frac{1-0.5}{(1-0.5)0.25+(1-0.5)(1-0.5)}=0.667
+$$
+
+So, Player 3 should guess Urn B if they have seen a blue marble because, in this specific scenario, the evidence suggests Urn B is more likely.
+
+**d.)** Suppose p = 0.4, a = 0.25, and b = 0.5
+
+$$
+P(UrnA|BLUE)=(1-0.4)*\frac{0.25}{(1-0.4)0.25+(1-0.5)(1-0.4)}=0.333
+$$ $$
+P(UrnB|BLUE)=(1-0.5)*\frac{1-0.5}{(1-0.4)0.25+(1-0.5)(1-0.4)}=0.554
+$$ So, Player 3 should guess Urn B if they have seen a blue marble because, in this specific scenario, the evidence suggests Urn B is more likely.
+
+**e.)**
+
+If Player 1 has observed a red marble and is considering whether to guess or not with a reward of \$q for not guessing, they will choose not to guess when the expected value of guessing is less than the reward for not guessing.
+
+The expected value of guessing Urn A is given by:
+
+EV(Urn A) = P(Urn A \| Red Marble) \* \$1 + P(Urn B \| Red Marble) \* \$0
+
+The expected value of guessing Urn B is given by:
+
+EV(Urn B) = P(Urn A \| Red Marble) \* \$0 + P(Urn B \| Red Marble) \* \$1
+
+Player 1 will choose not to guess when:
+
+EV(Urn A) \< q and EV(Urn B) \< q
+
+Now, substitute the conditional probabilities for Urn A and Urn B:
+
+$$
+P(Urn A|RedMarble)=P(Red Marble|UrnA)*P(\frac{UrnA}{P(RedMarble|UrnA})*P(UrnA)+P(RedMarble|UrnB)
+$$
+
+$$
+P(UrnB|RedMarble)=P(RedMarble|UrnB)*\frac{P(UrnB)}{P(RedMarble|UrnA}*P(UrnA)+P(RedMarble|UrnB*P(UrnB)
+$$
+
+P(Red Marble \| Urn A) is 0.75 (since a = 0.25), P(Urn A) is p, P(Red Marble \| Urn B) is 0.5 (since b = 0.5), and P(Urn B) is 1 - p.
+
+Now, set up the inequalities:
+
+0.75 \* p - q \< 0 0.5 \* (1 - p) - q \< 0
+
+Solve for p:
+
+0.75 \* p \< q 0.5 - 0.5 \* p - q \< 0
+
+Solve for p in the second inequality:
+
+0.5 \* p \> 0.5 - q p \> 1 - 2q
+
+Combine the two inequalities:
+
+0.75 \* p \< q p \> 1 - 2q
+
+So, Player 1 will choose not to guess when q is in the range: 0.75 \* p \< q \< 1 - 2q. This range depends on both a and b.
+
+**3.)**
+
+**a.)**
+
+Since each throw has 4 possible outcomes, the total number of potential outcomes is
+
+$$
+4\times4=16
+$$
+
+This is because, for each of the 4 outcomes on the first throw, there are 4 possible outcomes on the second throw, giving a total of 16 pairs
+
+**b.)**
+
+Let's denote the outcomes of the first throw as X and the outcomes of the second throw as Y. Then, we can represent the events A and B as subsets of the sample space:
+
+$$
+A=(X,Y)|X-Y\le1
+$$
+
+$$
+B=(X,Y)|X\,is\, odd
+$$
+
+Event A ∩ B (both conditions A and B are met):
+
+$$
+A\cap B=(X,Y)|(X-Y)\le1\, and\,X\,is\,odd
+$$
+
+**c.)**
+
+P(A) is the probability of event A. It is the ratio of the number of outcomes in A to the total number of outcomes in the sample space:
+
+$$
+P(A)=\frac{Number\,of\,outcomes\,in\,A}{Total\,outcomes}=\frac{10}{16}=\frac{5}{8}
+$$
+
+P(B) is the probability of event B. It is the ratio of the number of outcomes in B to the total number of outcomes in the sample space:
+
+$$
+P(B)=\frac{Number\,of\,outcomes\,in\,B}{Total\,outcomes}=\frac{8}{16}=\frac{1}{2}
+$$
+
+P(A\|B) is the conditional probability of A given B. It is the ratio of the number of outcomes in A ∩ B to the number of outcomes in B:
+
+$$
+P(A|B)=\frac{Number\,of\,outcomes\,in\,A\cap B}{Total\,outcomes\,B}=\frac{5}{8}
+$$
+
+P(B\|A) is the conditional probability of B given A. It is the ratio of the number of outcomes in A ∩ B to the number of outcomes in A: P(B\|A) = Number of outcomes in A ∩ B / Number of outcomes in A = 5 / 10 = 1/2.
+
+$$
+P(B|A)=\frac{Number\,of\,outcomes\,in\,B\cap A}{Total\,outcomes\,A}=\frac{5}{10}=\frac{1}{2}
+$$

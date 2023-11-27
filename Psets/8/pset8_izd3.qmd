@@ -1,0 +1,74 @@
+---
+title: "pset 8"
+author: "izd3"
+format: pdf
+editor: visual
+---
+
+1.)
+
+a.)
+
+The nodes that would eventually adopt this new behavior would be Nodes 2,9,4,7,8,6,5,3 the reason for this is because of the nature of the graph itself as well as the low setting threshold of 0.4. Because of the circular shape of the graph, most nodes only have two neighbors. If only one of them switches, that's already above the 0.4 threshold making it easier for the switch to occur in this graph. Nodes 4 and 7 would take the longest to eventually switch as they are the only set of nodes in the graph that has more than 2 neighbors.
+
+b.)
+
+The only nodes that will switch behaviors are nodes 1 and 9 if 2 is the starting node. This is because the only way to enter the bottom triangles is through nodes 3 and 8. Since these nodes have multiple neighbors that have not yet switched they wouldn't switch themselves as only 1/3 or 33.33% of their neighbors switched which is below the 0.4 or 40% threshold.
+
+c.)
+
+No there is no way two nodes can be initial adopters which allows the switch to travel to all nodes present in the graph. This has to do the the bridges located in it. This creates almost like a barrier as it is possible to spread the switch to up to two of the triangles in one go, but the last cannot be switched because there is only one entrance on both sides of those triangles meaning that broad influences don't affect them that much.
+
+\newpage
+
+2.)
+
+a.)
+
+No, the reason for this is because if all the nodes used the same step rule as each other node 4 should have also switched during the first step as it has the exact same layout as node 7 which did switch in the first step.
+
+b.)
+
+Yes, there is a value of *q* so that in each step, each node decides whether to switch to A using a threshold of *q*, and we would see the observed sequence of switches to A. For example, if we set *q*=0.333, then in the first step, node 6 would switch to A, because it has more than one-third of its neighbors using A (1 of its 3 neighbors is using A). In the second step, node 5 would switch to A, because it has more than one-third of its neighbors using A (1 of its 3 neighbors is using A). The behavior would continue to spread after the second step, but the exact information is not available to us.
+
+c.)
+
+At each step, any node that has at least one-third of its neighbors using A will switch to A. This means that the number of nodes using A will increase at each step. Eventually, all nodes will have more than one-third of their neighbors using A, and they will all switch to A and the value of *q*=0.333 from part (b), we can infer that eventually all nodes will switch to A.
+
+Nodes being switched: Nodes 1-8
+
+\newpage
+
+3.)
+
+a\)
+
+We can see that when both u and a neighbor use system A (A, A), the payoff is 6, and when both use system B (B, B), the payoff is 4. When they use different systems (A, B or B, A), the payoff is 2.
+
+Now, let's consider the threshold q. The indifference point is when the payoffs for using A and B are the same. In this case, the payoff is 2 for both A and B. Therefore, we set the payoffs equal to each other:
+
+$$6⋅x=4⋅(1−x)6⋅x=4⋅(1−x)$$
+
+Solving for x:
+
+$$6x=4-4x$$
+
+$$10x=4$$
+
+$$x=\frac{2}{5}$$
+
+So, the value of q is $$\frac{2}{5}$$ Therefore, if more than that number of u's neighbors use system A, u should choose system A, and if less than it uses system A, u should choose system B.
+
+b.)
+
+Using the same logic as a.)
+
+$$6⋅x=4⋅(1−x)6⋅x=4⋅(1−x)$$
+
+$$6x=4-4x$$
+
+$$10x=4$$
+
+$$x=\frac{2}{5}$$
+
+The value of q is still $$\frac{2}{5}$$ However, now the choice is more critical because using different systems results in a worse experience (payoff of 0). If more than $$\frac{2}{5}$$ of u's neighbors use system A, u should choose system A; otherwise, u should choose system B. As for whether it's a good idea for the developers of System A to discontinue the compatibility function, it depends on the importance of compatibility and ease of communication across different systems. If communication between A and B is essential, discontinuing the compatibility function may lead to a less connected network due to the increased difficulty of communication. If compatibility is less crucial, discontinuing it may simplify the system and reduce the burden on developers.
